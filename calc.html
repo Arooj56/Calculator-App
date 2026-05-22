@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> Calculator App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-box">
+            <div class="card">
+                <h1> Tip Calculator</h1>
+                <div class="field"> 
+                    <!--Bill-->
+                    <label for="bill"> Bill Amount </label>
+                    <input type="number" id="bill" min="0" step="0.01" placeholder="Enter bill">
+                    <p id="billError" style="color: red;"> </p>
+                    <!--Tip Buttons-->
+                    <label> Choose Tip %</label>
+                    <div class="tipbuttons">
+                        <button class="tip-btn active" onclick="setTip(10)">10%</button>
+                        <button class="tip-btn" onclick="setTip(15)">15%</button>
+                        <button class="tip-btn" onclick="setTip(20)">20%</button>
+                    </div>
+                    <input type="number" id="customTip" placeholder="Custom tip %" min="0">
+                    <p id="tipError" style="color:red;"></p>
+                    <!-- People -->
+                    <label for="people">Number of People</label>
+                    <input type="number" id="people" min="1" value="1">
+                    <p id="peopleError" style="color:red;"></p>
+                </div>
+            <button id="resetBtn">Reset</button>
+            </div>
+            <!-- Results -->
+            <div class="result-card">
+                <div class="result">
+                <p>Total Tip</p>
+                <h2 id="tipAmount">Rs 0.00</h2>
+                <p>Grand Total</p>
+                <h2 id="grandTotal">Rs 0.00</h2>
+                <p>Per Person</p>
+                <h2 id="perPerson">Rs 0.00</h2>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
