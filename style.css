@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 30px;
+}
+.main-box {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+.card,
+.result-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.field {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+input:focus {
+  outline: 2px solid #333;
+}
+.tipbuttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.tip-btn {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #ddd;
+}
+.tip-btn.active {
+  background: #333;
+  color: white;
+}
+.error {
+  color: red;
+  font-size: 13px;
+}
+.result {
+  margin-bottom: 25px;
+}
+#resetBtn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .main-box {
+    flex-direction: column;
+  }
+}
